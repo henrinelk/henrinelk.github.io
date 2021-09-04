@@ -1,9 +1,18 @@
-.gallery-image img {
-    width: 100%;
+.banner-image img {
+    width: 90%;
 }
-header .header-banner {
+.banner-image {
+margin: 10px;
+position: relative;
+text-align: center;
+}
+.gallery-image img {
+    border-radius:50%;
+    width:200px;
+    height:200px;
+}
 
-background-image: url("img/header.png");
+header {
 width: 100%;
 height: calc(100vh - 500px);
 background-repeat: no-repeat;
@@ -14,12 +23,12 @@ display: table;
 }
 header h1 {
 
-font-family: "Gentium Basic", serif;
-font-weight: 700;
+font-family: "Open Sans", serif;
+font-weight: 600;
 font-style: italic;
-font-size: 60px;
-color: #ffffff;
-line-height: 70px;
+font-size: 50px;
+color: #000000;
+line-height: 50px;
 text-transform: uppercase;
 text-shadow: 2px 2px 8px #000000;
 
@@ -31,7 +40,7 @@ font-family: "Open Sans", sans-serif;
 font-weight: 300;
 font-size: 15px;
 letter-spacing: 5px;
-color: #ffffff;
+color: #000000;
 text-transform: uppercase;
 
 }
@@ -50,18 +59,19 @@ margin: 0 auto;
 text-align: center; /*IE*/
 width: fit-content;
 
+
 }
 
 header nav ul li {
 
 display: inline-block;
-padding: 16px 16px;
+padding: 16px 200px;
 
 }
 nav ul li a {
 
 font-family: "Open Sans", sans-serif;
-font-weight: 400;
+font-weight: 300;
 font-size: 18px;
 letter-spacing: 3px;
 color: #172029;
@@ -69,99 +79,79 @@ text-transform: uppercase;
 text-decoration: none;
 
 }
+
+.meist{
+width:90%;
+display:flex;
+text-align:left;
+margin-left:auto;
+margin-right:auto;
+justify-content:space-evenly
+}
+
+.meie{
+width:90%;
+text-align:left;
+margin-left:auto;
+margin-right:auto;
+}
+
+.meist p{
+width:90%;
+
+}
+.meist a{
+width:90%;
+margin-left:auto;
+margin-right:auto;
+text-align:right;
+}
+
 footer {
-
-width: calc(100% - 80px);
-padding: 40px 40px;
-background-color: #172029;
-margin-top: 20px;
-overflow: hidden;
-
+display: flex;
+justify-content: space-between;
+width: 90%;
+padding: 10px 10px;
+background-image: url("img/footer.jpg");
+margin-left: auto;
+margin-right: auto;
 }
 
-.disclaimer {
 
-display: none;
-
-}
 footer ul {
-
-width: fit-content;
-float: left;
-padding-left: 0px;
-
-}
-
-footer ul li {
-
-display: block;
-padding: 0 0 10px 0;
-
-}
-
-footer ul li p {
-
-font-family: "Open Sans", sans-serif;
-font-weight: 300;
-font-size: 18px;
-letter-spacing: 2px;
-color: #ffffff;
-text-transform: uppercase;
-
-}
-
-footer ul li a {
-
 font-family: "Open Sans", sans-serif;
 font-weight: 400;
-font-size: 18px;
-letter-spacing: 3px;
+font-size: 12px;
 color: #ffffff;
 text-transform: uppercase;
 text-decoration: none;
+}
 
+footer ul li {
+display: block;
+}
+
+footer ul li a {
+font-family: "Open Sans", sans-serif;
+font-weight: 400;
+font-size: 12px;
+color: #ffffff;
+text-transform: uppercase;
+text-decoration: none;
 }
 .footer-sm {
-
-width: 32px;
-float: right;
-
+width: 42px;
 }
 
 .footer-sm img {
-
-width: 100%;
+width: 90%;
 margin-bottom: 10px;
-
-}
-hr {
-
-color: #4f5663;
-border-width: 2px;
-width: 30%;
-margin: 0 auto;
-margin-bottom: 5px;
-
 }
 
-.gallery-h2 {
-
-font-family: "Gentium Basic", sans-serif;
-font-weight: 600;
-font-size: 28px;
-letter-spacing: 2px;
-padding: 10px;
-color: #3a383d;
-text-transform: uppercase;
-text-align: center;
-
-}
 .gallery-image {
-
 margin: 10px;
 position: relative;
 text-align: center;
-
 }
 
 .post-header {
@@ -186,7 +176,7 @@ transform: translate(-50%, -50%);
 
 }
 
-.gallery-links {
+.banner2 {
 
 display: flex;
 flex-flow: row wrap;
@@ -197,18 +187,26 @@ display: -moz-flex;
 justify-content: center;
 -o-flex-flow: row wrap;
 justify-content: center;
-
 }
+
+.gallery-links {
+
+display: flex;
+flex-flow: row wrap;
+display: -webkit-flex;
+-webkit-flex-flow: row wrap;
+display: -moz-flex;
+-moz-flex-flow: row wrap;
+justify-content: center;
+-o-flex-flow: row wrap;
+justify-content: space-around;
+}
+
 -webkit-flex-basis: 300px;
 -moz-flex-basis: 300px;
 flex-basis: 300px;
 @media only screen and (min-width: 950px) {
 
-header .header-banner {
-
-      height: calc(100vh - 400px);
-
-}
 
 header h1 a {
 
@@ -226,30 +224,6 @@ header h2 {
 header nav ul li {
 
        padding: 16px 42px;
-
-}
-
-}
-@media only screen and (min-width: 950px) {
-
-.disclaimer {
-
-      display: block;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 300;
-      font-size: 18px;
-      letter-spacing: 2px;
-      line-height: 24px;
-      color: #ffffff;
-      text-transform: uppercase;
-      float: left;
-      margin: 0 80px;
-
-}
-
-.disclaimer span {
-
-      font-style: italic;
 
 }
 
